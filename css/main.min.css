@@ -1027,8 +1027,12 @@ sup {
 .testimonial__title {
 }
 .sl__block {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
 .sl__button {
+  
 }
 .prev {
   left: 10px;
@@ -1200,6 +1204,136 @@ sup {
   }
   .testimonial__text {
     margin-top: 24px;
+  }
+}
+
+/* --------------- Clients --------------------------- */
+.clients {
+  margin-top: 150px;
+}
+.clients__container {
+}
+.clients__titles {
+}
+.red__subtitle {
+}
+.title__style {
+}
+.clients__title {
+}
+.clients__body {
+  margin-top: 60px;
+}
+.clients__list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width:540px) {
+  .clients__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* --------------- Contact us --------------------------- */
+
+.main_contacts {
+  margin-top: 150px;
+}
+.main_contacts__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.main_contacts__titles {
+}
+.main_contacts__title {
+  margin-top: 12px;
+}
+.under__text {
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--bs-font-color);
+  max-width: 490px;
+  margin-top: 44px;
+}
+.main_contacts-form {
+
+}
+.wpcf7-form {
+  width: 100%;
+}
+.wpcf7-form-control-wrap {
+/* -- span for input -- */
+
+}
+.wpcf7-form-control {
+/* -- input -- */
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+
+  padding: 26px 32px;
+  background: #232323;
+  border-radius: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wpcf7-text {
+/* -- input -- */
+
+}
+.wpcf7-email {
+/* -- input -- */
+
+}
+.wpcf7-textarea {
+/* -- input -- */
+
+}
+
+.btn_send {
+}
+.wpcf7-submit {
+  margin-top: 24px;
+  background: var(--primary-color);
+  color: var(--bs-font-color);
+  cursor: pointer;
+  padding: 22px 32px;
+}
+.wpcf7-submit:hover {
+  background: var(--primary-hover-color);
+}
+.has-spinner {
+}
+.form_submit {
+}
+.wpcf7-spinner {
+}
+.wpcf7-response-output {
+}
+@media (max-width: 767.98px) {
+  .main_contacts__body {
+    grid-template-columns: 1fr;
+  }
+  .under__text {
+    font-size: 24px;
+}
+  .main_contacts-form {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 429.98px) {
+  .wpcf7-form-control {
+    padding: 20px 32px;
+  }
+  .wpcf7-submit {
+    margin-top: 15px;
+    padding: 20px 32px;
   }
 }
 
