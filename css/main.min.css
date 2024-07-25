@@ -1028,9 +1028,71 @@ sup {
   align-items: self-start;
   margin-top: 44px;
 }
+
+/*--------- slider swiper ------------------*/
+
 .slider-container {
   margin: 20px;
+  position: relative;
 }
+
+.swiper {
+  width: 840px;
+  height: 420px;
+}
+.swiper-slide {
+
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+
+}
+.swiper-3d .swiper-slide-shadow {
+  background: none !important;
+}
+@media (max-width: 1320px) {
+  .swiper {
+    width: 640px;
+    height: 500px;
+  }
+}
+@media (max-width: 1120px) {
+  .swiper {
+    width: 480px;
+    height: 400px;
+  }
+  .testimonial__text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 959.98px) {
+  .swiper {
+    width: 640px;
+    height: 400px;
+  }
+}
+@media (max-width: 680px) {
+  .swiper {
+    width: 440px;
+    height: 400px;
+  }
+  .testimonial__text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .swiper {
+    width: 340px;
+    height: 480px;
+  }
+  .testimonial__text p {
+    font-size: 14px;
+  }
+}
+
+
+
 .slider {
   position: relative;
   top: 0;
@@ -1043,10 +1105,10 @@ sup {
   border-radius: 32px;
   position: absolute;
   top: 10px;
-  opacity: 0.5;
-  width: 80%;
+  /* opacity: 0.5; */
+  /* width: 80%; */
 }
-.slide:nth-child(2n) {
+/* .slide:nth-child(2n) {
   top: 20px;
   opacity: 0.75;
   width: 90%;
@@ -1055,7 +1117,7 @@ sup {
   top: 0;
   opacity: 1;
   width: 100%;
-}
+} */
 .profile {
   display: flex;
   align-items: center;
