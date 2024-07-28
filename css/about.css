@@ -18,6 +18,40 @@
   --hover-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 
+.circle__blue::after,
+.circle__green::after,
+.circle__purple::after,
+.circle__orange::after,
+.circle__red::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: -14px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+.circle__blue::after {
+  background: #00F0FF;
+}
+
+.circle__green::after {
+  background: #00FF47;
+}
+
+.circle__purple::after {
+  background: #CC00FF;
+}
+
+.circle__orange::after {
+  background: #FF9900;
+}
+
+.circle__red::after {
+  background: #FF0000;
+}
+
 .hero__about {
   padding-top: 40px;
 }
@@ -77,12 +111,75 @@
   line-height: 160%;
   color: var(--bs-font-color);
 }
+.mission {
+  margin-top: 150px;
+}
+
+.mission__body {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.mission__text {
+  color: var(--bs-font-color);
+}
+.mission__text p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+}
+.mission__text .main__profile {
+  margin-top: 30px;
+}
+.mission__text .main__profile h3 {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.mission__text .main__profile .profile__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+.mission__text .main__profile .profile__list li {
+  background: #1a1a1a;
+  border-radius: 18px;
+  padding: 34px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.mission__text .main__profile .profile__list li .circle__blue,
+.mission__text .main__profile .profile__list li .circle__purple,
+.mission__text .main__profile .profile__list li .circle__green,
+.mission__text .main__profile .profile__list li .circle__orange,
+.mission__text .main__profile .profile__list li .circle__red {
+  position: relative;
+}
+.mission__text .main__profile .profile__list li .circle__blue::after,
+.mission__text .main__profile .profile__list li .circle__purple::after,
+.mission__text .main__profile .profile__list li .circle__green::after,
+.mission__text .main__profile .profile__list li .circle__orange::after,
+.mission__text .main__profile .profile__list li .circle__red::after {
+  width: 16px;
+  height: 16px;
+  left: -28px;
+  top: 2px;
+}
+
 /*====================================================================*/
 /*================ Media query =======================================*/
 /*====================================================================*/
 @media (max-width: 959.98px) {
   .about__body {
     grid-template-columns: 400px 1fr;
+  }
+  /*------------------------*/
+  .mission__body {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 767.98px) {
@@ -98,5 +195,10 @@
   }
   .philosophy__body {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 579.98px) {
+  .mission__text .main__profile .profile__list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=about.css.map */
