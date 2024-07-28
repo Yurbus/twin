@@ -148,7 +148,7 @@
 .mission__text .main__profile .profile__list li {
   background: #1a1a1a;
   border-radius: 18px;
-  padding: 34px;
+  padding: 34px 15px 34px 28px;
   font-weight: 600;
   font-size: 16px;
 }
@@ -170,6 +170,38 @@
   top: 2px;
 }
 
+/*---------------------------*/
+.team {
+  margin-top: 150px;
+}
+
+.team__body {
+  margin-top: 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.team__body .item__team {
+  color: var(--bs-font-color);
+  background: #161616;
+  border-radius: 24px;
+}
+.team__body .item__team:hover {
+  background: var(--primary-color);
+}
+.team__body .item__team .item__team-text {
+  padding: 33px 24px;
+  height: 130px;
+}
+.team__body .item__team .item__team-text .item__team-name {
+  font-weight: 700;
+  font-size: clamp(18px, 3vw, 24px);
+  margin-bottom: 10px;
+}
+.team__body .item__team .item__team-text .item__team-job {
+  font-weight: 400;
+  font-size: 18px;
+}
 /*====================================================================*/
 /*================ Media query =======================================*/
 /*====================================================================*/
@@ -196,9 +228,18 @@
   .philosophy__body {
     grid-template-columns: 1fr;
   }
+  /*------------------------*/
+  .team__body {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 579.98px) {
   .mission__text .main__profile .profile__list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .team__body .item__team .item__team-text {
+    padding: 25px 15px;
+    height: 100px;
   }
 }/*# sourceMappingURL=about.css.map */
