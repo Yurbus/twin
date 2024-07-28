@@ -749,7 +749,7 @@ sup {
 }
 @media (max-width: 430px) {
   .products__cards .card__item {
-    width: 320px;
+    width: 300px;
   }
   .products__cards .card__item .card__text .card__title {
     font-size: 32px;
