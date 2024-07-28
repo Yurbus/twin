@@ -1162,6 +1162,10 @@ sup {
   font-size: 24px;
   line-height: 1.4;
 }
+
+.testimonial__request {
+  width: 95%;
+}
 .request__wrap {
   position: relative;
   padding: 44px 32px;
@@ -1233,6 +1237,9 @@ sup {
 @media (max-width: 430.98px) {
   .slider-container {
     height: 570px;
+  }
+  .profile__name h2 {
+    width: 170px;
   }
   .profile__date {
     margin-top: 15px;
