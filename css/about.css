@@ -128,7 +128,7 @@
 }
 .mission__text p {
   font-weight: 500;
-  font-size: clamp(18px, 4vw, 20px);
+  font-size: clamp(16px, 4vw, 20px);
   line-height: 160%;
 }
 .mission__text .main__profile {
@@ -148,7 +148,7 @@
 .mission__text .main__profile .profile__list li {
   background: #1a1a1a;
   border-radius: 18px;
-  padding: 34px 15px 34px 28px;
+  padding: 34px 15px 34px 32px;
   font-weight: 600;
   font-size: 16px;
 }
