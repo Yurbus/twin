@@ -1,1 +1,102 @@
-/*# sourceMappingURL=about.css.map */
+@charset "UTF-8";
+/** Подключение переменных */
+:root {
+  --bs-font-family: "Gilroy", sans-serif;
+  --bs-font-size: 16px;
+  --bs-font-weight: 400;
+  --bs-line-height: 1;
+  --bs-font-color: #fff;
+  --bs-transition: 0.3s ease-in-out;
+  --bs-radius: 10px;
+  --primary-color: #1371FF;
+  --primary-hover-color: #0C67F0;
+  --secondary-color: #FF0000;
+  --white-color: #fff;
+  --black-color: #000;
+  --grey-color: #a3a3a3;
+  --bs-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 8px 3px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero__about {
+  padding-top: 40px;
+}
+
+.about__body {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 20px;
+}
+.about__body .about__left {
+  background-color: #1A1A1A;
+  padding: 72px 44px;
+  border-radius: 32px;
+  height: 500px;
+}
+.about__body .about_button {
+  margin-top: 60px;
+}
+.about__body .about__right p {
+  font-weight: 400;
+  font-size: clamp(18px, 4vw, 24px);
+  line-height: 140%;
+  color: #a2a2a2;
+  margin-bottom: 10px;
+}
+
+.center__text {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+.center__text p {
+  max-width: 956px;
+  font-weight: 600;
+  font-size: clamp(18px, 4vw, 24px);
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--bs-font-color);
+}
+
+/*--------------- philosophy ------------------------------*/
+.philosophy {
+  margin-top: 180px;
+}
+
+.philosophy__body {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 50px;
+}
+.philosophy__body .philosophy__text p {
+  font-weight: 500;
+  font-size: clamp(16px, 4vw, 20px);
+  line-height: 160%;
+  color: var(--bs-font-color);
+}
+/*====================================================================*/
+/*================ Media query =======================================*/
+/*====================================================================*/
+@media (max-width: 959.98px) {
+  .about__body {
+    grid-template-columns: 400px 1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  .about__body {
+    grid-template-columns: 1fr;
+  }
+  .about__body .about__left {
+    height: 300px;
+  }
+  /*------------------------*/
+  .philosophy {
+    margin-top: 120px;
+  }
+  .philosophy__body {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=about.css.map */
