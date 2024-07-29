@@ -1404,6 +1404,7 @@ sup {
   transform: translateY(-12.5rem);
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
+
 .popup__body .wpcf7-form .form__title {
   color: var(--bs-font-color);
   font-weight: 700;
@@ -1430,6 +1431,18 @@ sup {
   color: #8a8a8a;
   background: transparent;
   font-size: 30px;
+}
+@media (max-width:767.98px) {
+  .popup__content {
+    padding: 1.875rem 1.125rem;
+  }
+  .popup__body .wpcf7-form .form__title {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+  .wpcf7-form-control {
+    padding: 14px 26px;
+  }
 }
 
 .checkboxes {
