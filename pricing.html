@@ -25,7 +25,7 @@
             <ul class="menu__list">
               <li class="menu-item"><a href="about.html">About Us</a></li>
               <li class="menu-item"><a href="products.html">Products</a></li>
-              <li class="menu-item"><a href="#">Services</a></li>
+              <li class="menu-item"><a href="page-sass.html">Services</a></li>
               <li class="menu-item"><a href="pricing.html">Pricing</a></li>
               <li class="menu-item"><a href="contacts.html">Contacts</a></li>
             </ul>
@@ -228,7 +228,62 @@
         <div class="popup__content">
             <button class="button-close popup__close" type="button">x</button>
             <div class="popup__body">
-                <h2>Базовый пример модального окна</h2>
+              <form action="" method="post" class="wpcf7-form">
+                <h4 class="form__title">Send your message now!</h4>
+                <p>
+                  <span class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-form-control wpcf7-text" placeholder="Select which product*" type="email" name="your-second-name">
+                  </span>
+                </p>
+                <div class="input-group">
+                  <p>
+                    <span class="wpcf7-form-control-wrap">
+                      <input class="wpcf7-form-control wpcf7-text" placeholder="Firdt Name*" type="text" name="your-name">
+                    </span>
+                  </p>
+                  <p>
+                    <span class="wpcf7-form-control-wrap">
+                      <input class="wpcf7-form-control wpcf7-text" placeholder="Second Name*" type="text" name="your-second-name">
+                    </span>
+                  </p>
+                </div>
+                <p>
+                  <span class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-form-control wpcf7-email" placeholder="Work Email*" type="email" name="your-email">
+                  </span>
+                </p>
+                <p>
+                  <span class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-form-control wpcf7-phone" placeholder="Phone*" type="phone" name="your-phone">
+                  </span>
+                </p>
+                <p>
+                  <span class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-form-control wpcf7-text" placeholder="Company*" type="text" name="your-company">
+                  </span>
+                </p>
+                <p>
+                  <span class="wpcf7-form-control-wrap">
+                    <input class="wpcf7-form-control wpcf7-text" placeholder="Your messege*" type="text" name="your-massage">
+                  </span>
+                </p>
+
+                <div class="accept">
+                  <p>
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input type="checkbox" value="1" class="check_box">
+                        <span class="wpcf7-list-item-label">I accept the website <a href="">privacy policy</a><span>
+                      </label>
+                    </span>
+                  </p>
+                </div>
+                <div class="btn_send">
+                  <p>
+                    <input class="wpcf7-form-control wpcf7-submit form_submit" type="submit" value="Отправить"><span class="wpcf7-spinner"></span>
+                  </p>
+                </div>
+              </form>
             </div>
         </div>
     </div>

@@ -1397,10 +1397,24 @@ sup {
   inline-size: 100%;
   max-inline-size: 43.125rem;
   /** Установить свои значения */
-  padding: 1.875rem 3.125rem;
-  background-color: #fff;
+  padding: 2.875rem 3.125rem;
+  background-color: #1A1A1A;
+  color: #fff;
+  border-radius: 24px;
   transform: translateY(-12.5rem);
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+.popup__body .wpcf7-form .form__title {
+  color: var(--bs-font-color);
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 44px;
+}
+.wpcf7-list-item-label {
+  margin-left: 15px;
+}
+.wpcf7-list-item-label a {
+  color: var(--primary-color);
 }
 .popup__close {
   display: flex;
@@ -1413,8 +1427,9 @@ sup {
   inline-size: 2.5rem;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #8a8a8a;
   background: transparent;
+  font-size: 30px;
 }
 
 .checkboxes {

@@ -1,0 +1,136 @@
+/** Подключение переменных */
+:root {
+    --bs-font-family: "Gilroy", sans-serif;
+    --bs-font-size: 16px;
+    --bs-font-weight: 400;
+    --bs-line-height: 1;
+    --bs-font-color: #fff;
+    --bs-transition: 0.3s ease-in-out;
+    --bs-radius: 10px;
+    --primary-color: #1371FF;
+    --primary-hover-color: #0C67F0;
+    --secondary-color: #FF0000;
+    --white-color: #fff;
+    --black-color: #000;
+    --grey-color: #a3a3a3;
+    --bs-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 8px 3px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+.circle__blue::after,
+.circle__green::after,
+.circle__purple::after,
+.circle__orange::after,
+.circle__red::after,
+.circle__blue_navy::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: -14px;
+    top: 4px;
+    border-radius: 50%;
+}
+
+.circle__blue::after {
+    background: #00F0FF;
+}
+.circle__green::after {
+    background: #00FF47;
+}
+.circle__purple::after {
+    background: #CC00FF;
+}
+.circle__orange::after {
+    background: #FF9900;
+}
+.circle__red::after {
+    background: #FF0000;
+}
+.circle__blue_navy::after {
+    background: #0057FF;
+}
+
+/*-------------------------------------------------------------------*/
+
+.hero-sass {
+    background: radial-gradient(170.31% 100% at 58.18% 0%, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 195, 255, 0.5) 99.50000047683716%);
+    border-radius: 0 0 32px 32px;
+}
+.sass__body {
+    padding: 130px 0 147px;
+    .sass__title {
+        margin-bottom: 16px;
+    }
+    p {
+        font-weight: 500;
+        font-size: clamp(16px, 4vw, 24px);
+        line-height: 1.4;
+        color: #a2a2a2;
+        max-width: 845px;
+    }
+    
+}
+
+/*-------------------------------------------------------------------*/
+
+.service-sass__body {
+    color: var(--bs-font-color);
+    margin-top: 100px;
+}
+.service-sass__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    li {
+        padding: 44px 66px;
+        font-weight: 700;
+        font-size: clamp(20px, 4vw, 32px);
+        background: #1a1a1a;
+        border-radius: 24px;
+        height: 240px;
+        .circle__orange,
+        .circle__green,
+        .circle__purple,
+        .circle__red,
+        .circle__blue,
+        .circle__blue_navy {
+            position: relative;
+            &::after{
+                width: 18px;
+                height: 18px;
+                top: 5px;
+                left: -30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*====================================================================*/
+/*================ Media query =======================================*/
+/*====================================================================*/
+
+
+@media (max-width: 959.98px) {
+	
+}
+
+@media (max-width: 767.98px) {
+	.service-sass__list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        li {
+            height: 180px;
+        }
+    }
+}
+
+@media (max-width: 430.98px) {
+	
+}
+
+
+
