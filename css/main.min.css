@@ -1397,7 +1397,7 @@ sup {
   inline-size: 100%;
   max-inline-size: 43.125rem;
   /** Установить свои значения */
-  padding: 2.875rem 3.125rem;
+  padding: 2.188rem 1.875rem;
   background-color: #1A1A1A;
   color: #fff;
   border-radius: 24px;
@@ -1409,7 +1409,7 @@ sup {
   color: var(--bs-font-color);
   font-weight: 700;
   font-size: 32px;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
 }
 .wpcf7-list-item-label {
   margin-left: 15px;
