@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/main.min.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
 </head>
 
   <body>
@@ -242,15 +243,16 @@
                   <span class="red__subtitle">Transforming the complexity.</span>
                   <h2 class="title__style testimonial__title">Testimonials.</h2>
                 </div> 
-                <!-- <div class="sl__block navigation">
+                <div class="sl__block navigation">
                   <button class="sl__button prev" onclick="moveSlide(-1)"><img src="images/prev.svg" alt="icon"></button>
                   <button class="sl__button next" onclick="moveSlide(1)"><img src="images/next.svg" alt="icon"></button>
-                </div> -->
+                </div>
               </div>
               <div class="testimonial__body">
 
                 <div class="slider-container">
-                  <!-- <div class="slider">
+
+                  <div class="slider">
                       <div class="slide" id="slide1">
                         <div class="testimonial">
                           <div class="profile">
@@ -323,10 +325,10 @@
                           </div>
                         </div>
                       </div>
-                  </div> -->
+                  </div>
 
-                  
-                    <div class="swiper mySwiper">
+                </div>
+                    <!-- <div class="swiper mySwiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide"> 
                           <div class="slide" id="slide1">
@@ -411,8 +413,7 @@
                       <div class="swiper-button-next"></div>
                       <div class="swiper-button-prev"></div>
 
-                    </div>
-                </div>
+                    </div> -->
 
                 <div class="testimonial__request">
                   <div class="request__wrap">
@@ -652,14 +653,14 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

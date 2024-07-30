@@ -1104,10 +1104,10 @@ sup {
   border-radius: 32px;
   position: absolute;
   top: 10px;
-  /* opacity: 0.5; */
-  /* width: 80%; */
+  opacity: 0.5; 
+  width: 80%;
 }
-/* .slide:nth-child(2n) {
+.slide:nth-child(2n) {
   top: 20px;
   opacity: 0.75;
   width: 90%;
@@ -1116,7 +1116,7 @@ sup {
   top: 0;
   opacity: 1;
   width: 100%;
-} */
+}
 .profile {
   display: flex;
   align-items: center;
@@ -1164,7 +1164,7 @@ sup {
 }
 
 .testimonial__request {
-  width: 95%;
+  width: 100%;
 }
 .request__wrap {
   position: relative;
