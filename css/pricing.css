@@ -146,7 +146,7 @@
   background: #2e2e2e;
 }
 .pricing__body .pricing__item-growth .features {
-  margin-top: 44px;
+  margin-top: 76px;
 }
 .pricing__body .pricing__item-growth .features .features__lis li {
   background: #1a1a1a;
@@ -159,12 +159,13 @@
   text-align: right;
 }
 .pricing__body .pricing__item-custom .features {
-  margin-top: 84px;
+  margin-top: 94px;
 }
 .pricing__body .pricing__item-custom .features .features__lis li {
   background: #fff;
   color: #000;
   border: none;
+  font-weight: 600;
 }
 .pricing__body .pricing__item-custom .plan__button {
   margin-bottom: 12px;

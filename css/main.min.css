@@ -1032,7 +1032,7 @@ sup {
 /*--------- slider swiper ------------------*/
 
 .slider-container {
-  margin: 20px;
+  margin: 20px 40px 20px 0;
   position: relative;
 }
 .swiper {
@@ -1088,7 +1088,7 @@ sup {
     left: 75% !important;
   }
   .swiper-button-next {
-    right: 0 !important;
+    right: -15px !important;
   }
 }
 @media (max-width: 680px) {
@@ -1117,7 +1117,7 @@ sup {
   .swiper-button-next,
   .swiper-button-prev {
     position: absolute;
-    top: -20% !important;
+    top: -19% !important;
   }
 }
 
