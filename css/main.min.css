@@ -1036,12 +1036,12 @@ sup {
   position: relative;
 }
 .swiper {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 840px;
-  height: 420px;
+  height: 500px;
 }
 .swiper-slide {
-
+  height: 100%;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -1067,7 +1067,7 @@ sup {
 @media (max-width: 1320px) {
   .swiper {
     width: 640px;
-    height: 500px;
+    height: 530px;
   }
 }
 @media (max-width: 1120px) {
@@ -1106,7 +1106,7 @@ sup {
 @media (max-width: 480px) {
   .swiper {
     width: 340px;
-    height: 480px;
+    height: 523px;
   }
   .testimonial__text p {
     font-size: 14px;
@@ -1266,7 +1266,8 @@ sup {
 }
 @media (max-width: 430.98px) {
   .slider-container {
-    height: 490px;
+    width: 324px;
+    height: 530px;
   }
   .profile__name h2 {
     width: 170px;
@@ -1276,9 +1277,6 @@ sup {
   }
   .testimonial__text {
     margin-top: 24px;
-  }
-  .testimonial__request {
-    width: 94%;
   }
 }
 
