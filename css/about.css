@@ -111,6 +111,7 @@
   line-height: 160%;
   color: var(--bs-font-color);
 }
+/*--------------- mission ------------------------------*/
 .mission {
   margin-top: 150px;
 }
@@ -147,27 +148,34 @@
 }
 .mission__text .main__profile .profile__list li {
   background: #1a1a1a;
-  border-radius: 18px;
-  padding: 34px 15px 34px 32px;
   font-weight: 600;
   font-size: 16px;
+  border-radius: 18px;
 }
-.mission__text .main__profile .profile__list li .circle__blue,
-.mission__text .main__profile .profile__list li .circle__purple,
-.mission__text .main__profile .profile__list li .circle__green,
-.mission__text .main__profile .profile__list li .circle__orange,
-.mission__text .main__profile .profile__list li .circle__red {
+.mission__text .main__profile .profile__list li a {
+  padding: 34px 15px 34px 32px;
+  border-radius: 18px;
+  display: block;
+}
+.mission__text .main__profile .profile__list li a .circle__blue,
+.mission__text .main__profile .profile__list li a .circle__purple,
+.mission__text .main__profile .profile__list li a .circle__green,
+.mission__text .main__profile .profile__list li a .circle__orange,
+.mission__text .main__profile .profile__list li a .circle__red {
   position: relative;
 }
-.mission__text .main__profile .profile__list li .circle__blue::after,
-.mission__text .main__profile .profile__list li .circle__purple::after,
-.mission__text .main__profile .profile__list li .circle__green::after,
-.mission__text .main__profile .profile__list li .circle__orange::after,
-.mission__text .main__profile .profile__list li .circle__red::after {
+.mission__text .main__profile .profile__list li a .circle__blue::after,
+.mission__text .main__profile .profile__list li a .circle__purple::after,
+.mission__text .main__profile .profile__list li a .circle__green::after,
+.mission__text .main__profile .profile__list li a .circle__orange::after,
+.mission__text .main__profile .profile__list li a .circle__red::after {
   width: 16px;
   height: 16px;
   left: -28px;
   top: 2px;
+}
+.mission__text .main__profile .profile__list li a:hover {
+  background: #333333;
 }
 
 /*---------------------------*/
