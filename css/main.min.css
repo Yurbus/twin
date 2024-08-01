@@ -184,6 +184,7 @@
 
 nav {
   display: flex;
+  align-items: center;
 }
 
 footer,
@@ -493,7 +494,7 @@ sup {
 .header__container {
   display: flex;
   justify-content: space-between;
-  block-size: 6.25rem;
+  /* block-size: 6.25rem; */
   align-items: center;
   position: relative;
 }
@@ -517,7 +518,9 @@ sup {
 .header__container .header__menu .menu__list {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
+
 .header__container .header__menu .menu__list .menu-item a {
   display: flex;
   white-space: nowrap;
@@ -525,12 +528,75 @@ sup {
   font-weight: 500;
   font-size: 16px;
 }
+.menu__list .menu-item > a {
+  padding: 27px 0;
+}
 .header__container .header__menu .menu__list .menu-item a:hover {
   color: var(--white-color);
 }
 .header__container .header__menu .menu__list .menu-item:not(:last-child) {
   margin-right: clamp(10px, 4vw, 40px);
 }
+
+/*------------- Sub memu ------------------*/
+.menu__list .menu-item .sub-menu {
+  position: absolute;
+  background: #1A1A1A;
+  padding: 20px;
+  border-radius: 15px;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease 0s;
+}
+.sub-menu .menu-item a  {
+  padding: 10px 0;
+}
+.menu__list .menu-item:hover .sub-menu  {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+/* Анимация для подменю */
+.sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.menu-item.has-submenu:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width:768px) {
+  .menu__list {
+    display: block;
+  }
+
+  .menu-item.has-submenu .sub-menu {
+    display: none;
+  }
+
+  .menu-item.has-submenu.active .sub-menu {
+    display: block;
+  }
+
+  .sub-menu {
+    position: static;
+    box-shadow: none;
+  }
+  .sub-menu .menu-item {
+    margin-bottom: 5px;
+  }
+}
+
+
+
+
+/*-------------And sub memu ------------------*/
+
+
 .header__container .header__menu .header__btn {
   margin-left: 20px;
   min-width: 146px;
@@ -554,9 +620,15 @@ sup {
     visibility: hidden;
     opacity: 0;
     background: var(--black-color);
-    padding: 40px;
+    padding: 40px 70px;
     border-radius: 15px;
   }
+  .menu__list .menu-item .sub-menu {
+    position: relative;
+  }
+  .header__container {
+    block-size: 6.25rem;
+}
   .header .header__menu._active {
     transform: translateX(0);
     visibility: visible;
@@ -565,7 +637,7 @@ sup {
   .header .header__menu .menu__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .header .header__menu .menu__list .menu-item {
     margin-bottom: 30px;
@@ -574,6 +646,7 @@ sup {
   .header .header__menu .menu__list .menu-item a {
     text-align: center;
     font-size: 20px;
+    padding: 0;
   }
   .header .header__menu .menu__list .menu-item:not(:last-child) {
     margin-right: 0;

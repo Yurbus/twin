@@ -23,6 +23,72 @@ $(function() {
 		return false;
 	});
 });
+
+//-------------------------------------------------------------------------------------------------
+// Открыть под меню V1
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     let servicesLink = document.getElementById('services-link');
+//     let subMenu = servicesLink.nextElementSibling; // Получаем подменю, которое идет после ссылки
+
+//     servicesLink.addEventListener('click', function (event) {
+//         // Проверяем ширину экрана
+//         if (window.innerWidth <= 768) {
+//             event.preventDefault(); // Отменяем переход по ссылке
+
+//             // Переключаем класс для отображения подменю
+//             subMenu.classList.toggle('show');
+//         }
+//     });
+// });
+document.addEventListener('DOMContentLoaded', function () {
+	const menuItems = document.querySelectorAll('.menu-item.has-submenu');
+
+	menuItems.forEach(item => {
+		item.addEventListener('mouseenter', function () {
+		if (window.innerWidth > 768) {
+			const subMenu = this.querySelector('.sub-menu');
+			subMenu.style.display = 'block';
+			setTimeout(() => {
+			subMenu.style.opacity = 1;
+			subMenu.style.visibility = 'visible';
+			}, 10);
+		}
+		});
+		
+		item.addEventListener('mouseleave', function () {
+		if (window.innerWidth > 768) {
+			const subMenu = this.querySelector('.sub-menu');
+			subMenu.style.opacity = 0;
+			subMenu.style.visibility = 'hidden';
+			setTimeout(() => {
+			subMenu.style.display = 'none';
+			}, 300);
+		}
+		});
+
+		item.addEventListener('click', function (e) {
+		if (window.innerWidth <= 768) {
+			e.preventDefault();
+			this.classList.toggle('active');
+		}
+		});
+	});
+	});
+
+
+//-------------------------------------------------------------------------------------------------
+// открыть под меню V2
+// document.addEventListener('DOMContentLoaded', function () {
+//     let carrentMenuLink = document.querySelector('.carrent-menu__link');
+
+//     carrentMenuLink.addEventListener('click', function () {
+//         // Переключаем класс "clicked" для изменения стилей
+//         this.classList.toggle('clicked');
+//     });
+// });
+
+
 //-------------------------------------------------------------------------------------------------
 // Cлайдер для отзывов
 // let currentSlide = 0;
@@ -102,16 +168,6 @@ $(function() {
 //     });
 // });
 
-//-------------------------------------------------------------------------------------------------
-// открыть под меню
-// document.addEventListener('DOMContentLoaded', function () {
-//     let carrentMenuLink = document.querySelector('.carrent-menu__link');
-
-//     carrentMenuLink.addEventListener('click', function () {
-//         // Переключаем класс "clicked" для изменения стилей
-//         this.classList.toggle('clicked');
-//     });
-// });
 
 //-------------------------------------------------------------------------------------------------
 // Прокрутка чисел на странице 
