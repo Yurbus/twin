@@ -1001,11 +1001,11 @@ sup {
   background: var(--white-color);
   color: var(--black-color);
 }
-/* .pricing__title {
+.pricing__title {
   font-weight: 500;
   font-size: 44px;
   margin-bottom: 26px;
-} */
+}
 .pricing__plan {
   width: 100%;
   text-align: right;
