@@ -414,7 +414,7 @@ sup {
 .red__subtitle {
   font-weight: 500;
   font-size: clamp(14px, 2vw, 18px);
-  color: #f00;
+  color: #FFFFFF80;
   margin-bottom: 10px;
 }
 
@@ -806,7 +806,7 @@ sup {
 }
 
 .products__cards::-webkit-scrollbar {
-  display: block;
+  display: none;
 }
 .products__cards::-webkit-scrollbar-track {
   background-color: #000;
@@ -896,7 +896,7 @@ sup {
   right: 0;
 }
 .solut__img img {
-  width: 241px;
+  width: 210px;
 }
 @media (max-width: 767.98px) {
   .solutions__body {
@@ -1001,11 +1001,11 @@ sup {
   background: var(--white-color);
   color: var(--black-color);
 }
-.pricing__title {
+/* .pricing__title {
   font-weight: 500;
   font-size: 44px;
   margin-bottom: 26px;
-}
+} */
 .pricing__plan {
   width: 100%;
   text-align: right;
@@ -1262,7 +1262,7 @@ sup {
 }
 .testimonial__text p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: clamp(15px, 4vw, 24px);
   line-height: 1.4;
 }
 

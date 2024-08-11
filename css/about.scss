@@ -59,11 +59,10 @@
 	display: grid;
 	grid-template-columns: 520px 1fr;
 	gap: 20px;
+	background-color: #1A1A1A;
+	padding: 72px 44px;
+	border-radius: 32px;
 	.about__left {
-		background-color: #1A1A1A;
-		padding: 72px 44px;
-		border-radius: 32px;
-		height: 500px;
 	}
 	.about_button {
 		margin-top: 80px;
@@ -72,26 +71,24 @@
 	}
 	.about__right {
 		p {
-			font-weight: 400;
+			text-transform: uppercase;
+			font-weight: 600;
 			font-size: clamp(18px, 4vw, 24px);
 			line-height: 140%;
-			color: #a2a2a2;
-			margin-bottom: 10px;
+			color: var(--bs-font-color);
 		}
 	}
 }
 .center__text {
 	margin-top: 64px;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	p {
-		max-width: 956px;
-		font-weight: 600;
-		font-size: clamp(18px, 4vw, 24px);
-		line-height: 1.2;
-		text-transform: uppercase;
-		text-align: center;
-		color: var(--bs-font-color);
+		font-weight: 400;
+		font-size: clamp(16px, 4vw, 24px);
+		line-height: 1.4;
+		color: var(--grey-color);
+		margin-bottom: 30px;
 	}
 }
 
@@ -155,14 +152,13 @@
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 10px;
-			text-align: center;
 			li {
 				background: #1a1a1a;
 				font-weight: 600;
 				font-size: 16px;
 				border-radius: 18px;
 				a {
-					padding: 34px 15px 34px 32px;
+					padding: 34px 15px 34px 70px;
 					border-radius: 18px;
 					display: block;
 					.circle__blue, 
@@ -219,7 +215,26 @@
 		}
 	}
 }
-
+.team__body-2 {
+	.item__team {
+		color: var(--bs-font-color);
+		background: #000;
+		border-radius: 24px;
+		&:hover {
+			background: var(--black-color);
+		}
+		.item__team-photo {
+			border-radius: 0 0 24px 24px;
+			img {
+				filter: saturate(0%);
+				transition: all 0.3s ease 0s;
+				&:hover {
+					filter: saturate(100%);
+				}
+			}
+		}
+	}
+}
 
 /*====================================================================*/
 /*================ Media query =======================================*/
@@ -238,7 +253,7 @@
 	.about__body {
 		grid-template-columns: 1fr;
 		.about__left {
-			height: 300px;
+			height: 180px;
 		}
 	}
 	/*------------------------*/
@@ -262,7 +277,6 @@
 			}
 		}
 	}
-
 	.team__body {
 		.item__team {
 			.item__team-text {
@@ -271,6 +285,11 @@
 			}
 		}
 	}
-	
-
 }
+
+@media (max-width: 459.98px) {
+	.mission__text .main__profile .profile__list li a {
+		padding: 34px 15px 34px 50px;
+	}
+}
+
