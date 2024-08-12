@@ -1599,6 +1599,12 @@ sup {
     height: 500px;
   }
 }
+@media (max-width:479.98px) {
+  .input-group {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+}
 
 .checkboxes {
   display: flex;
