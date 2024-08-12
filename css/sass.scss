@@ -82,27 +82,30 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     li {
-        padding: 44px 66px;
         font-weight: 700;
         font-size: clamp(20px, 4vw, 32px);
         background: #1a1a1a;
         border-radius: 24px;
-        height: 240px;
         transition: all 0.2s ease 0s;
-        .circle__orange,
-        .circle__green,
-        .circle__purple,
-        .circle__red,
-        .circle__blue,
-        .circle__blue_navy {
-            position: relative;
-            &::after{
-                width: 18px;
-                height: 18px;
-                top: 5px;
-                left: -30px;
+        a {
+            padding: 44px 66px 164px 66px;
+            display: block;
+            .circle__orange,
+            .circle__green,
+            .circle__purple,
+            .circle__red,
+            .circle__blue,
+            .circle__blue_navy {
+                position: relative;
+                &::after{
+                    width: 18px;
+                    height: 18px;
+                    top: 5px;
+                    left: -30px;
+                }
             }
         }
+        
         &:hover {
             background: #333;
         }
@@ -127,7 +130,9 @@
         grid-template-columns: 1fr;
         gap: 15px;
         li {
-            height: 180px;
+            a {
+                padding: 44px 55px 116px 55px;
+            }
         }
     }
 }

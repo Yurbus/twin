@@ -89,28 +89,30 @@
   gap: 20px;
 }
 .service-sass__list li {
-  padding: 44px 66px;
   font-weight: 700;
   font-size: clamp(20px, 4vw, 32px);
   background: #1a1a1a;
   border-radius: 24px;
-  height: 240px;
   transition: all 0.2s ease 0s;
 }
-.service-sass__list li .circle__orange,
-.service-sass__list li .circle__green,
-.service-sass__list li .circle__purple,
-.service-sass__list li .circle__red,
-.service-sass__list li .circle__blue,
-.service-sass__list li .circle__blue_navy {
+.service-sass__list li a {
+  padding: 44px 66px 164px 66px;
+  display: block;
+}
+.service-sass__list li a .circle__orange,
+.service-sass__list li a .circle__green,
+.service-sass__list li a .circle__purple,
+.service-sass__list li a .circle__red,
+.service-sass__list li a .circle__blue,
+.service-sass__list li a .circle__blue_navy {
   position: relative;
 }
-.service-sass__list li .circle__orange::after,
-.service-sass__list li .circle__green::after,
-.service-sass__list li .circle__purple::after,
-.service-sass__list li .circle__red::after,
-.service-sass__list li .circle__blue::after,
-.service-sass__list li .circle__blue_navy::after {
+.service-sass__list li a .circle__orange::after,
+.service-sass__list li a .circle__green::after,
+.service-sass__list li a .circle__purple::after,
+.service-sass__list li a .circle__red::after,
+.service-sass__list li a .circle__blue::after,
+.service-sass__list li a .circle__blue_navy::after {
   width: 18px;
   height: 18px;
   top: 5px;
@@ -128,7 +130,7 @@
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  .service-sass__list li {
-    height: 180px;
+  .service-sass__list li a {
+    padding: 44px 55px 116px 55px;
   }
 }/*# sourceMappingURL=sass.css.map */
