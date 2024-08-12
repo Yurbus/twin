@@ -63,6 +63,7 @@
   background-color: #1A1A1A;
   padding: 72px 44px;
   border-radius: 32px;
+  align-items: center;
 }
 .about__body .about_button {
   margin-top: 80px;
