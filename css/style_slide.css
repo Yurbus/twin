@@ -42,12 +42,18 @@
     width: 94%;
     left: 3%;
 }
+.slide.middle p {
+    opacity: 0.8;
+}
 .slide.bottom {
     opacity: 0.6;
     transform: translateY(40px);
     z-index: 1;
     width: 88%;
     left: 6%;
+}
+.slide.bottom p {
+    opacity: 0.6;
 }
 .testim {
     display: flex;
@@ -119,6 +125,16 @@
 }
 
 
-@media (max-width: 767.98) {
-
+@media (max-width: 520px) {
+    .testimonial__body {
+        margin-top: 0px;
+    }
+    .testim__profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .testim {
+        height: 430px;
+    }
 }
+
