@@ -1,0 +1,124 @@
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    padding-top: 35px;
+    height: 570px; /* Adjust height as needed */
+}
+
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.slide.visible {
+    display: block;
+}
+.slide.top {
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 3;
+}
+.slide.middle {
+    opacity: 0.8;
+    transform: translateY(20px);
+    z-index: 2;
+    width: 94%;
+    left: 3%;
+}
+.slide.bottom {
+    opacity: 0.6;
+    transform: translateY(40px);
+    z-index: 1;
+    width: 88%;
+    left: 6%;
+}
+.testim {
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    overflow: hidden;
+    text-align: left;
+    padding: 38px 28px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.testim__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testim__profile-block {
+    display: flex;
+    align-items: center;
+}
+.testim__profile .testim__profile-block img {
+    display: flex;
+    flex: 0 0 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile__name {
+    margin-left: 32px;
+}
+.testim__name h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3;
+}
+.testim__name h4 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.date-location span {
+    color: black;
+}
+.date-location span:not(:last-child) {
+    font-style: italic;
+}
+.date-location span:last-child {
+    font-weight: 700;
+}
+.testim__text p {
+    font-weight: 500;
+    margin-top: 42px;
+    font-size: clamp(16px, 3vw, 24px);
+    line-height: 1.4;
+}
+
+.date-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+    color: #888;
+}
+.date-location span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+
+@media (max-width: 767.98) {
+
+}
