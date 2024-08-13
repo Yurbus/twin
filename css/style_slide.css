@@ -136,5 +136,13 @@
     .testim {
         height: 430px;
     }
+    .testim__profile .testim__profile-block img {
+        width: 50px;
+        height: 50px;
+        flex: 0 0 40px;
+    }
+    .date-location {
+        margin-top: 10px;
+    }
 }
 
